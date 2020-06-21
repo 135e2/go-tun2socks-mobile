@@ -1,6 +1,6 @@
 # go-tun2socks-mobile
 
-[![Build Status](https://travis-ci.com/135e2/go-tun2socks-mobile.svg?branch=master)](https://travis-ci.com/eycorsican/135e2)
+[![Build Status](https://travis-ci.com/135e2/go-tun2socks-mobile.svg?branch=master)](https://travis-ci.com/135e2/go-tun2socks-mobile)
 
 Demo for building and using `go-tun2socks` on iOS and Android.
 
