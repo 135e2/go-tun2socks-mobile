@@ -36,6 +36,7 @@ install:
   - go install golang.org/x/mobile/cmd/gomobile
   - gomobile init
 
+
 script:
   - echo "Building"
   # Make android on linux.
