@@ -7,7 +7,7 @@ IOS_TARGET=ios
 ANDROID_TARGET=android
 LDFLAGS='-s -w'
 IMPORT_PATH=github.com/eycorsican/go-tun2socks-mobile
-
+ANDROID_HOME=~/Android/Sdk
 BUILD_IOS="gomobile init && cd $(BUILDDIR) && $(GOBIND) -a -ldflags $(LDFLAGS) -target=$(IOS_TARGET) -o $(IOS_ARTIFACT) $(IMPORT_PATH)"
 BUILD_ANDROID="gomobile init && cd $(BUILDDIR) && $(GOBIND) -a -ldflags $(LDFLAGS) -target=$(ANDROID_TARGET) -o $(ANDROID_ARTIFACT) $(IMPORT_PATH)"
 
