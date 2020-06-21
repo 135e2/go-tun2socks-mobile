@@ -1,6 +1,6 @@
 # go-tun2socks-mobile
 
-[![Build Status](https://travis-ci.com/eycorsican/go-tun2socks-mobile.svg?branch=master)](https://travis-ci.com/eycorsican/go-tun2socks-mobile)
+[![Build Status](https://travis-ci.com/135e2/go-tun2socks-mobile.svg?branch=master)](https://travis-ci.com/eycorsican/135e2)
 
 Demo for building and using `go-tun2socks` on iOS and Android.
 
@@ -18,6 +18,7 @@ Demo for building and using `go-tun2socks` on iOS and Android.
 
 ## Build
 ```bash
+
 go get -d ./...
 
 # Build an AAR
