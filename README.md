@@ -18,7 +18,8 @@ Demo for building and using `go-tun2socks` on iOS and Android.
 
 ## Build
 ```bash
-
+export ANDROID_HOME=~/Android/Sdk
+//Set sdk path
 go get -d ./...
 
 # Build an AAR
