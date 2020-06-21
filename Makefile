@@ -1,4 +1,4 @@
-GOMOBILE=gomobile
+GOMOBILE=$(BUILDDIR)/gomobile
 GOBIND=$(GOMOBILE) bind
 BUILDDIR=$(shell pwd)/build
 IOS_ARTIFACT=$(BUILDDIR)/Tun2socks.framework
