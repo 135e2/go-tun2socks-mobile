@@ -1,4 +1,4 @@
-GOMOBILE=$(BUILDDIR)/gomobile
+GOMOBILE=gomobile
 GOBIND=$(GOMOBILE) bind
 BUILDDIR=$(shell pwd)/build
 IOS_ARTIFACT=$(BUILDDIR)/Tun2socks.framework
@@ -9,7 +9,7 @@ LDFLAGS='-s -w'
 IMPORT_PATH=github.com/eycorsican/go-tun2socks-mobile
 
 BUILD_IOS="cd $(BUILDDIR) && $(GOBIND) -a -ldflags $(LDFLAGS) -target=$(IOS_TARGET) -o $(IOS_ARTIFACT) $(IMPORT_PATH)"
-BUILD_ANDROID="cd $(BUILDDIR) && $(GOBIND) -a -ldflags $(LDFLAGS) -target=$(ANDROID_TARGET) -o $(ANDROID_ARTIFACT) $(IMPORT_PATH)"
+BUILD_ANDROID="gomobile init && cd $(BUILDDIR) && $(GOBIND) -a -ldflags $(LDFLAGS) -target=$(ANDROID_TARGET) -o $(ANDROID_ARTIFACT) $(IMPORT_PATH)"
 
 all: ios android
 
