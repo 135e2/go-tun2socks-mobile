@@ -21,7 +21,8 @@ addons:
     packages:
     - wget
     - unzip
-    - default-jdk
+    - openjdk8
+    - openjdk8-jre
 
 before_install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then source .travis/download-sdk-tools-linux; fi
