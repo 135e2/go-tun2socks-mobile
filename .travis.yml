@@ -37,6 +37,7 @@ install:
   - export ANDROID_HOME=`pwd`
   - export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
   - gomobile init
+  - ls ndktool
 
 
 script:
