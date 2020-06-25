@@ -34,6 +34,8 @@ install:
   - echo "Installing gomobile"
   - go get golang.org/x/mobile/cmd/gomobile
   - go install golang.org/x/mobile/cmd/gomobile
+  - export ANDROID_HOME=`pwd`
+  - export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
   - gomobile init
 
 
