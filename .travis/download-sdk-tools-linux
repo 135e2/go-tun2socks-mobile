@@ -2,3 +2,4 @@
 
 echo "Downloading sdk tools"
 wget -q -O sdktool.zip "https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip"
+wget -q -O ndktool.zip "https://dl.google.com/android/repository/android-ndk-r21b-linux-x86_64.zip"
