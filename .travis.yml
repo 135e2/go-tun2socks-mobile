@@ -35,8 +35,6 @@ install:
   - go get golang.org/x/mobile/cmd/gomobile
   - go install golang.org/x/mobile/cmd/gomobile
   - gomobile init
-  - ls ndktool
-
 
 script:
   - echo "Building"
