@@ -3,18 +3,8 @@
 java -version
 
 echo "Unzipping sdk tools"
-unzip sdktool.zip
-unzip ndktool.zip
-export PATH=`pwd`/tools/bin:$PATH
-
-echo "Installing sdk components"
-echo y | sdkmanager "tools"
-echo y | sdkmanager "platform-tools"
-echo y | sdkmanager "platforms;android-15"
-echo y | sdkmanager "ndk-bundle"
-
-export ANDROID_HOME=`pwd`
-export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
+sed -i 's/r12b/r20b/g' setup.sh && sed -i '41,48d' setup.sh && chmod +x setup.sh
+ ./setup.sh
 
 echo "sdk installed in $ANDROID_HOME"
 echo "ndk installed in $ANDROID_NDK_HOME"
